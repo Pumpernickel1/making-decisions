@@ -8,7 +8,8 @@
 
 //CODE HERE
 
-// For problems 2-3 use the following lines of code:
+let lovesCode = true;
+
 var amysAge = 29
 var brittanisAge = 34
 var amysBirthYear = 1991
