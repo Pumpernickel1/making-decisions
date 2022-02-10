@@ -8,7 +8,13 @@
 
 //CODE HERE
 
-let lovesCode = true;
+let lovesCode = false;
+console.log(lovesCode)
+if(lovesCode === true) {
+  console.log("I love to code!")
+} else {
+  console.log("Coding has its challenges")
+}
 
 var amysAge = 29
 var brittanisAge = 34
@@ -22,6 +28,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
+if(amysAge > brittanisAge) {
+  console.log("Amy is older.")
+} else if (amysAge < brittanisAge) {
+  console.log("Brittani is older")
+} else if (amysAge === brittanisAge) {
+  console.log("They are the same age.")
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -31,20 +44,37 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
+if(amysBirthYear === brittanisBirthYear) {
+  console.log("Amy & Brittani were born in the same year")
+} else {
+  console.log("Amy & Brittani were not born in the same year")
+}
 
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
-let rain = true
+let temperature = 59
+let rain = false
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
-
+//CODE HERE 
+if(temperature >= 80 && rain === true) {
+  console.log("Wear a t-shirt and take an umbrella.")
+} else if (temperature >= 60 && temperature <= 80 && rain === true) {
+  console.log("Wear a rain-jacket.")
+} else if (temperature < 60 && rain === true) {
+  console.log("Wear a jacket and carry an umbrella.")
+} else if(temperature >= 80 && rain === false) {
+  console.log("Wear a t-shirt and do not take an unbrella.")
+} else if (temperature >= 60 && temperature <= 80 && rain === false) {
+  console.log("No need for a rain-jacket.")
+} else if (temperature < 60 && rain === false) {
+    console.log("Wear a jacket.")
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -53,7 +83,9 @@ let rain = true
 */
 
 //CODE HERE
-
+for (let i = 0; i < 10; i++) {
+  console.log("Hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -62,7 +94,9 @@ let rain = true
 */
 
 //CODE HERE
-
+for (let i = 1; i < 11; i++) {
+  console.log(i)
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -71,6 +105,9 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 10; i >= 0; i--) {
+  console.log(i)
+}
 
 let score = 0
 let passingScore = 7
@@ -78,10 +115,15 @@ let passingScore = 7
 ////////// PROBLEM 8 //////////
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each 
+  iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
 //CODE HERE
+while (score < 7) {
+  console.log("Your score is not high enough")
+  score += 1
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
